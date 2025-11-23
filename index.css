@@ -122,11 +122,24 @@ body {
 @media (max-width: 480px) {
     body {
         justify-content: flex-end; /* mover la carta a la derecha */
-        padding-right: 5px;       /* pequeño margen para que no pegue al borde */
+        padding-right: 8px;        /* margen un poco mayor */
     }
 
     .card {
-        width: 210px;   /* más pequeña en móviles */
-        height: 335px;
+        width: 180px;   /* más angosta */
+        height: 280px;  /* más baja */
+    }
+
+    /* Ajustar el título */
+    .card .container #head {
+        font-size: 0.9em; /* un poco más grande para que se lea bien */
+        margin-top: -20px;
+    }
+
+    /* Ajustar párrafos */
+    .card p {
+        font-size: 0.7em;   /* texto más pequeño pero legible */
+        margin: 6px 10px;   /* menos margen para aprovechar espacio */
+        line-height: 1.3;   /* más compacto */
     }
 }
